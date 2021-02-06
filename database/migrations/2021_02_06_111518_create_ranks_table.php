@@ -17,6 +17,7 @@ class CreateRanksTable extends Migration
             $table->id();
             $table->unsignedInteger('user_id');
             $table->unsignedInteger('language_id');
+            $table->integer('point_rank');
             $table->timestamps();
         });
     }
